@@ -1,0 +1,27 @@
+#write down the nouns
+
+# Player class will recieve a Question and respond with a corect or incorrect answer.PLayer's lives starts at 3
+class Player
+@name = ""
+@lives = 3
+
+# Question class contains two random numbers and question realted to the numbers
+class Question
+@number1 = random from 1 - 20
+@number2 = random from 1 - 20
+@question = "@number1 + @number2"
+
+# Game class will contain a Question class and Player class , will also use to track current player
+class Game
+def start(players)
+end
+  
+# Main class will require all the files and instances of the Players inside an array to track players
+class Main
+  require './players'
+  require './question'
+  require './game'
+
+  players = [Player.new("player1"), Player.new("player2")]
+  game = Game.new
+  game.start(players)
